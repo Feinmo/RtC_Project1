@@ -1,0 +1,154 @@
+:root {
+    /* --flexBoxesBGColor: #58a733; */
+    --flexBoxesBGColor: #58a733;
+    --mainFontColor: #f8f8f8;
+    --mainBGColor: #f7f7f7;
+    --productsBGColor: #58a733;
+    --searchBarBGColor: #14a6b1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER SECTION */
+header {
+    background-color: var(--mainBGColor);
+}
+
+#search-bar {
+    margin-bottom: 4px;
+    margin-left: 2%;
+    border-radius: 0.5em;
+    border: solid var(--flexBoxesBGColor);
+    color: var(--searchBarBGColor);
+    width: 175px;
+
+    
+}
+label {
+    color: var(--flexBoxesBGColor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+header>nav {
+    background-color: var(--flexBoxesBGColor);
+    height: 48px;
+    padding-left: 10px;
+}
+
+header nav>ul>li {
+    display: inline-block;
+    position: relative;
+    top: 1em;
+    margin-left: 1em;
+    padding: 3px;
+    font-size: 0.75em;
+
+}
+
+.menu-link,
+.product-link {
+    display: block;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--mainFontColor);
+    padding: 2px;
+    border-radius: 2px;
+
+}
+
+.menu-link:hover,
+.product-link:hover {
+    background-color: var(--mainFontColor);
+    color: var(--flexBoxesBGColor);
+    cursor: default;
+
+}
+
+#logo-image {
+    height: 64px;
+}
+
+#logo-in-the-bar {
+    height: 48px;
+    visibility: hidden;
+}
+
+/* MAIN SECTION */
+
+
+main {
+    background-color: var(--mainBGColor);
+}
+
+main>section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    background-color: var(--productsBGColor);
+    flex-basis: 23%;
+    margin: 1%;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: var(--mainFontColor);
+    border-radius: 4px;
+    box-shadow: 10px 5px 10px rgba(153, 153, 153, 0.2);
+    }
+
+article>img {
+    border: 2px solid rgba(12, 219, 40, 0.699);
+    margin: 10px;
+    height: 128px;
+    width: 180px;
+    justify-content: center;
+}
+article>a {
+    justify-content: center;
+}
+
+#slogan {
+    font-family: 'Slabo 27px', serif;
+    font-weight: 600;
+    color: var(--flexBoxesBGColor);
+    font-size: 3em;
+    opacity: 0.25;
+}
+
+footer {
+    background-color: var(--flexBoxesBGColor);
+    color: var(--mainFontColor);
+}
+
+@media screen and (max-width:375px) {
+    header {
+        height: 45px;
+
+    }
+
+    .menu-link {
+        display: block;
+        line-height: 18px;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--mainFontColor);
+        font-size: 9px;
+    }
+
+    #search-menu {
+        display: none;
+    }
+    #logo-in-the-bar {
+        visibility: visible;
+    }
+}
