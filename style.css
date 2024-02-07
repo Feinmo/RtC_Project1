@@ -27,12 +27,25 @@ header {
 #search-bar {
     margin-bottom: 4px;
     margin-left: 2%;
+    border: solid var(--flexBoxesBGColor);
+    width: 175px;
+}
+
+#search-bar-button {
+    margin-bottom: 4px;
+    margin-left: 2%;
     border-radius: 0.5em;
     border: solid var(--flexBoxesBGColor);
-    color: var(--searchBarBGColor);
-    width: 175px;
-
-    
+    background-color: var(--flexBoxesBGColor);
+    color: var(--mainFontColor);
+    padding:2px;
+}
+#search-bar-button:hover {
+    background-color: var(--searchBarBGColor);
+}
+#search-bar-button:active {
+    background-color: var(--mainBGColor);
+    color: var(--productsBGColor);
 }
 label {
     color: var(--flexBoxesBGColor);
