@@ -111,21 +111,21 @@ main>section {
 
 article {
     background-color: var(--productsBGColor);
-    flex-basis: 23%;
-    margin: 1%;
+    width: 256px;
+    margin: 2%;
     font-family: 'Arial Narrow', Arial, sans-serif;
     color: var(--mainFontColor);
     border-radius: 4px;
     box-shadow: 10px 5px 10px rgba(153, 153, 153, 0.2);
+    padding: 10px;     
     }
 
 article>img {
     border: 2px solid rgba(12, 219, 40, 0.699);
     margin: 10px;
-    height: 128px;
-    width: 180px;
-    justify-content: center;
-}
+    object-fit: cover;
+    width: 200px;
+    }
 article>a {
     justify-content: center;
 }
@@ -157,7 +157,11 @@ footer {
         color: var(--mainFontColor);
         font-size: 9px;
     }
-
+    article {
+        background-color: var(--productsBGColor);
+        width: 230px;
+        flex-wrap: wrap;
+    }
     #search-menu {
         display: none;
     }
