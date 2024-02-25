@@ -28,7 +28,7 @@ header {
     margin-bottom: 4px;
     margin-left: 2%;
     border: solid var(--flexBoxesBGColor);
-    width: 175px;
+    width: 165px;
 }
 
 #search-bar-button {
@@ -159,8 +159,9 @@ footer {
     }
     article {
         background-color: var(--productsBGColor);
-        width: 230px;
+        width: 260px;
         flex-wrap: wrap;
+        margin-left: 64px;
     }
     #search-menu {
         display: none;
